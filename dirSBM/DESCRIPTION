@@ -1,0 +1,48 @@
+Package: dirSBM
+Title: Dirichlet Stochastic Block Model for compositional weighted networks
+Version: 0.1.0
+Authors: 
+    person(given = "Iuliia",
+           family = "Promskaia",
+           role = c("aut", "cre"),
+           email = "iuliia.promskaia@insight-centre.org",
+           comment = c(ORCID = "0009-0009-8704-2046")),
+    person(given = "Adrian",
+           family = "O'Hagan",
+           role = c("aut"),
+           email = "adrian.ohagan@ucd.ie"),
+    person(given = "Michael",
+           family = "Fop",
+           role = c("aut"),
+           email = "michael.fop@ucd.ie"))
+
+Description: A Dirichlet stochastic block model is a model-based clustering 
+    framework for directed weighted networks with compositional edge attributes, 
+    i.e. the sum of weights sent by each individual node of the network is 1. The 
+    vector of weights of each node is modelled using a Dirichlet distribution, 
+    conditionally on the set of cluster labels of the sender node and all the receivers. 
+    The model is implemented within the hybrid maximum likelihood framework using 
+    variational classification expectation-maximisation algorithm, and the choice of the number 
+    of clusters is addressed using the Integrated Completed Likelihood criterion. 
+
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+Depends: R(>= 3.6.0)
+Imports:
+igraph,
+doParallel,
+mclust,
+kernlab,
+e1071,
+LaplacesDemon,
+blockmodels,
+compositions,
+RColorBrewer,
+latex2exp,
+ggplot2,
+dplyr,
+circlize,
+maps
