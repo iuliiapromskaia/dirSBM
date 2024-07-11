@@ -132,6 +132,7 @@ dirSBM_init=function(X,K,init=c("random","kmeans","clr_kmeans","specc","sbm_bin"
   cl_order=matchClasses(table(cl,Z_cl_order),method="exact",verbose=0)
   cl_order=matrix(cl_order,2,K,byrow=TRUE)[1,]
   Alpha=Alpha[cl_order,]
+  theta=theta[cl_order]
   
   outputs=list(Z_hard=Z_hard,Z=Z,cl=cl,theta=theta,Alpha=Alpha,llvals=llvals)
   return(outputs)
